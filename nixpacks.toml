@@ -8,7 +8,9 @@ cmds = [
   "cp package.json.deploy package.json",
   "cp client/index.deploy.html client/index.html",
   "mkdir -p dist",
-  "npm run build"
+  "npm run build",
+  "ls -la dist/",
+  "cat dist/index.js | head -20"
 ]
 
 [phases.install]

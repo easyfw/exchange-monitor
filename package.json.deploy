@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "vite build --config vite.config.deploy.ts && cp server/index.deploy.js dist/index.js",
+    "build": "vite build --config vite.config.deploy.ts && rm -f dist/index.js && cp server/index.deploy.js dist/index.js && echo 'Server file copied successfully'",
     "start": "NODE_ENV=production node dist/index.js",
     "postinstall": "echo 'Dependencies installed successfully'"
   },
