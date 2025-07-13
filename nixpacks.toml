@@ -1,13 +1,10 @@
 [phases.build]
 cmds = [
   "cp package.json.deploy package.json",
-  "cp vite.config.deploy.ts vite.config.ts", 
-  "npm install",
+  "cp client/index.deploy.html client/index.html",
+  "npm ci",
   "npm run build"
 ]
 
-[phases.start]
+[start]
 cmd = "npm start"
-
-[variables]
-NODE_ENV = "production"
