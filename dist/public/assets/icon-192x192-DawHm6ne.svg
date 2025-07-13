@@ -1,0 +1,17 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" rx="24" fill="#2563eb"/>
+  <circle cx="96" cy="96" r="72" fill="#ffffff" opacity="0.1"/>
+  
+  <!-- Currency symbols -->
+  <text x="48" y="80" fill="#ffffff" font-size="24" font-weight="bold" font-family="Inter">$</text>
+  <text x="96" y="80" fill="#ffffff" font-size="24" font-weight="bold" font-family="Inter">¥</text>
+  <text x="144" y="80" fill="#ffffff" font-size="24" font-weight="bold" font-family="Inter">₩</text>
+  
+  <!-- Arrows indicating exchange -->
+  <path d="M60 100 L80 110 L80 105 L75 105 L75 95 L80 95 L60 100Z" fill="#ffffff"/>
+  <path d="M112 100 L132 110 L132 105 L127 105 L127 95 L132 95 L112 100Z" fill="#ffffff"/>
+  
+  <!-- Chart line -->
+  <path d="M32 140 Q64 120 96 130 T160 125" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <circle cx="160" cy="125" r="3" fill="#ffffff"/>
+</svg>
