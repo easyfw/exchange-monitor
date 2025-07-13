@@ -1,5 +1,10 @@
 [phases.build]
-cmds = ["npm run build"]
+cmds = [
+  "cp package.json.deploy package.json",
+  "cp vite.config.deploy.ts vite.config.ts", 
+  "npm install",
+  "npm run build"
+]
 
 [phases.start]
 cmd = "npm start"
