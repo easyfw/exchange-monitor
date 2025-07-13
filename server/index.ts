@@ -57,7 +57,12 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // Use PORT environment variable for production (Vercel) or fallback to 5000 for development
+  // Add health check endpoint for Railway
+  app.get('/health', (_req, res) => {
+    res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+  });
+
+  // Use PORT environment variable for production (Railway: 8080) or fallback to 5000 for development
   const port = process.env.PORT || 5000;
   server.listen({
     port,
