@@ -1,0 +1,28 @@
+{
+  "name": "exchange-monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^0.10.4",
+    "axios": "^1.10.0",
+    "cheerio": "^1.1.0",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^17.0.0",
+    "drizzle-orm": "^0.39.1",
+    "drizzle-zod": "^0.7.0",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "memorystore": "^1.6.7",
+    "nanoid": "^5.1.5",
+    "node-fetch": "^3.3.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.2",
+    "zod-validation-error": "^3.4.0"
+  }
+}

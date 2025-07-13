@@ -1,0 +1,19 @@
+# GitHub 업로드 명령어 (저장소 생성 후 실행)
+
+git init
+git add .
+git commit -m "Initial commit: Real-time currency exchange rate monitoring app"
+git branch -M main
+git remote add origin https://github.com/YOUR_USERNAME/exchange-monitor.git
+git push -u origin main
+
+# Railway 배포 단계:
+# 1. railway.app 접속
+# 2. "Start a New Project" 클릭  
+# 3. "Deploy from GitHub repo" 선택
+# 4. exchange-monitor 저장소 선택
+# 5. 환경변수 설정:
+#    DATABASE_URL=postgresql://neondb_owner:npg_ZeCDA7n1Yfud@ep-snowy-dust-ad16d33f-pooler.c-2.us-east-1.aws.neon.tech/neondb
+#    EXCHANGE_API_KEY=your-api-key
+#    NODE_ENV=production
+# 6. 자동 배포 완료 대기
